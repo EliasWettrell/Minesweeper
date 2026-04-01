@@ -1,6 +1,21 @@
-.flex-grid {
-  display: flex;
+
+* {
+  box-sizing: border-box;
 }
-.col {
-  flex: 1;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 4vw);
+
+} 
+
+
+.wrapper > div {
+  border: 2px solid #000000;
+  border-radius: 1px;
+  background-color: #63785c;
+  color: #35170c;
+  width: 4vw;
+  height: 4vw;
+  align-self: center;
 }
