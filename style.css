@@ -1,21 +1,37 @@
-
 * {
   box-sizing: border-box;
 }
 
-.wrapper {
+.board {
   display: grid;
-  grid-template-columns: repeat(10, 4vw);
+  grid-template-columns: repeat(10, 4rem);
 
 } 
 
 
-.wrapper > div {
-  border: 2px solid #000000;
-  border-radius: 1px;
-  background-color: #63785c;
-  color: #35170c;
-  width: 4vw;
-  height: 4vw;
-  align-self: center;
+.cell  {
+  max-width: 4rem;
+  max-height: 4rem;
+
+}
+
+
+.image {
+  width: 4rem;
+  height: 4rem;
+  background-image: url("tile-unexplored.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
