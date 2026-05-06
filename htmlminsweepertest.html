@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minesweeper</title>
+
+  <!-- CSS !-->
+  <link rel="stylesheet" href="cssminesweepertest.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div id="board" class="board"></div>
+  </div>
+ 
+  <div id="lose-screen" class="overlay hidden">
+    <div class="lose-box">
+      <h2>💣 Game Over</h2>
+      <div class="buttons">
+        <button id="restart-btn">Restart</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- JS -->
+  <script src="jsminesweepertest.js"></script>
+</body>
+</html>
