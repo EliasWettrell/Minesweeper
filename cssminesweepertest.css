@@ -11,51 +11,13 @@
   
   .board {
     display: grid;
-    grid-template-columns: repeat(10, 4rem);
+    grid-template-columns: repeat(25, 4rem);
   }
   
   .cell {
     width: 4rem;
     height: 4rem;
   }
-  
-  .image {
-    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-unexplored.png?raw=true");
-    background-size: cover;
-    background-position: center;
-  }
-  .overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-}
-
-.hidden {
-  display: none;
-}
-
-.lose-box {
-  background: white;
-  padding: 2rem 3rem;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-button {
-  padding: 0.6rem 1.4rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
 
 /* Game over screen  */
 
@@ -90,6 +52,12 @@ button {
   padding: 0.6rem 1.4rem;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.image{
+  background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-unexplored.png?raw=true");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -138,6 +106,10 @@ button {
   .explored {
     background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-explored.png?raw=true");
   }
+
+
+
+
 
 
   .number-1,
