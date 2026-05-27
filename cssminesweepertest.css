@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(2, 4rem);
+  }
+  
+  .cell {
+    width: 4rem;
+    height: 4rem;
+  }
+
+/* Game over screen  */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.lose-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.win-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.diff-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#easy-btn {
+background: green;
+}
+
+#medium-btn {
+background: orange;
+}
+
+#hard-btn {
+background: red;
+}
+
+.image{
+  background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-unexplored.png?raw=true");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Bilder */
+
+  .number-1 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-1.png?raw=true");
+  }
+  
+  .number-2 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-2.png?raw=true");
+  }
+  
+  .number-3 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-3.png?raw=true");
+  }
+  
+  .number-4 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-4.png?raw=true");
+  }
+  
+  .number-5 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-5.png?raw=true");
+  }
+  
+  .number-6 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-6.png?raw=true");
+  }
+  
+  .number-7 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-7.png?raw=true");
+  }
+  
+  .number-8 {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-8.png?raw=true");
+  }
+  
+  .flag {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-flag.png?raw=true"); 
+  }
+
+  .mine {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-mine.png?raw=true");
+  }
+  
+  .explored {
+    background-image: url("https://github.com/EliasWettrell/Minesweeper/blob/Minesweeper/tile-explored.png?raw=true");
+  }
+
+
+  .number-1,
+  .number-2,
+  .number-3,
+  .number-4,
+  .number-5,
+  .number-6,
+  .number-7,
+  .number-8 {
+    background-size: cover;
+    background-position: center;
+  }
