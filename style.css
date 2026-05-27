@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 4rem);
+
+} 
+
+
+.cell  {
+  max-width: 4rem;
+  max-height: 4rem;
+
+}
+
+
+.image {
+  width: 4rem;
+  height: 4rem;
+  background-image: url("tile-unexplored.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
